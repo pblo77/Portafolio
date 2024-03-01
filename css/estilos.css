@@ -1,32 +1,3 @@
-/* reglas
-selectores
-declaraciones
-propiedades
-valores */
-
-
-/* seletor de etiqueta  header - section - article - nav */
-/* header {
-  background: pink;
-  color: red
-} */
-
-/* selector descendente  */
-/* body header div nav ol li a  */
-
-/* selector de clase . */
-
-/* .link */
-
-/* selector de id # */
-/* #portafolio */
-
-
-
-/* gris oscuro = #1d252c */
-/* gris claro = #626262 */
-/* background gris = #1b2127 */
-/* celeste = #026fff */
 @font-face {
   font-family: 'icomoon';
   src:  url('../fonts/icomoon.eot?bqb2fe');
@@ -42,7 +13,7 @@ valores */
 [class^="icon-"], [class*=" icon-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: 'icomoon' !important;
-  speak: none;
+  speak-as: none;
   font-style: normal;
   font-weight: normal;
   font-variant: normal;
@@ -307,9 +278,6 @@ figure {
   flex-wrap: wrap;
 }
 
-.social {
-}
-
 .social-link {
   display: inline-block;
   width: 50px;
@@ -319,7 +287,7 @@ figure {
 }
 
 .social-link.twitter {
-  background-image: url('../images/twitter.svg');
+  background-image: url('../images/gorjeo.png');
 }
 .social-link.facebook {
   background-image: url('../images/facebook.svg');
