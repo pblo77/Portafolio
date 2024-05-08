@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Juan Pablo Zuluaga A.</title>
+    <link rel="icon" type="image/png" href="images/ajedrez.png" />
+    <link href="https://fonts.googleapis.com/css?family=Fjalla+One|Source+Sans+Pro" rel="stylesheet">
+    <link rel="stylesheet" href="css/estilos.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1"> 
+  </head>
+  <body>
+    <i class="icon-menu burger-button" id="burger-menu"></i>
+    <header class="header">
+      <div class="container">
+        <figure class="logo">
+          <img src="images/PBLO 2.0.png" height="50" alt="Logo de Juan Pablo Zuluaga A." />
+        </figure>
+        <nav class="menu">
+          <ol>
+            <li>
+              <a class="link" href="#portafolio">Portafolio</a>
+            </li>
+            <li>
+              <a class="link" href="#contacto">Contáctame!</a>
+            </li>
+          </ol>
+        </nav>
+      </div>
+    </header>
+    <section class="hero">
+      <div class="container">
+        <h1>
+          Hola! Soy <strong>Juan Pablo Zuluaga A.</strong> <br/> Desarrollador  <strong>Web</strong> con <br> pasión por el <strong>aprendizaje constante.</strong>
+        </h1>
+        <img class="hero-image" src="images/king.jpg" width="430" height="300" alt="imagen principal del sitio"> 
+      </div>
+    </section>
+    <section id="portafolio" class="portfolio">
+      <div class="container">
+        <h2>Portafolio (Proyectos Destacados)</h2>
+      <article class="project">
+        <div class="project-details">
+          <h3 class="project-title">Mi primer login</h3>
+          <h6 class="project-course">HTML/CSS/JAVASCRIPT</h6>
+          <p class="project-date"><small><strong>Fecha:</strong> 15/01/2024</small></p>
+          <p class="project-url"><small><strong>Puedes verlo en:</strong> <a target="_blank" href="https://pblo77.github.io/LoginMBA/">https://pblo77.github.io/LoginMBA/</a></small></p>
+          <p class="project-description">Mi primer login fue el resultado del aprendizaje obtenido en bases de html, css y javascript.</p>
+        </div>
+        <figure class="project-imageContainer">
+          <img class="project-image" width="500" src="images/bg3.jpg" alt="proyecto login">
+        </figure>
+      </article>
+      <article class="project">
+        <div class="project-details">
+          <h3 class="project-title">Bases de datos</h3>
+          <h6 class="project-course">JAVASCRIPT/MYSQL/MONGODB/NODEJS</h6>
+          <p class="project-date"><small><strong>Fecha:</strong> 26/02/2024</small></p>
+          <p class="project-url"><small><strong>Puedes verlo en:</strong> <a target="_blank" href="https://github.com/pblo77/Bases-de-datos.git">https://https://github.com/pblo77/Bases-de-datos.git</a></small></p>
+          <p class="project-description">Bases de datos aloja una serie de ejercicios que evidencian el proceso de aprendizaje en bases de MySQL, MongoDB y NodeJS.</p>
+        </div>
+        <figure class="project-imageContainer">
+          <img class="project-image" width="500" src="images/database.png" alt="proyecto login">
+        </figure>
+      </article>
+      </div>
+      
+    </section>
+    <section id="contacto">
+    </section>
+    <footer class="footer">
+      <div class="container">
+        <div>
+          <p>Curso de Desarrollo Web <img src="images/riwi.jpg" width="80" alt="platzi"></p>
+        </div>
+        <div class="social">
+          <a target="_blank" href="https://github.com/pblo77" class="social-link github"></a>
+          <a target="_blank" href="https://www.instagram.com/pablo_z077/" class="social-link instagram"></a>
+        </div>
+        <div>
+          <p>
+            Designed with ❤️ by <strong>pblo77</strong>
+          </p>
+        </div>
+      </div>
+    </footer>
+    <script>
+      const ipad = window.matchMedia('screen and (max-width: 767px)')
+      const menu = document.querySelector('.menu');
+      const burgerButton = document.querySelector('#burger-menu');
+      ipad.addListener(validation)
+
+      function validation(event) {
+        if (event.matches) {
+          burgerButton.addEventListener('click', hideShow)
+        } else {
+          burgerButton.removeEventListener('click', hideShow)
+        }
+      }
+      validation(ipad);
+
+
+      function hideShow() {
+        if (menu.classList.contains('is-active')) {
+          menu.classList.remove('is-active');
+        } else {
+          menu.classList.add('is-active');
+        }
+      }
+    </script>
+  </body>
+</html>
